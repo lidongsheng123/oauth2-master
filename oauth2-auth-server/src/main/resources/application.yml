@@ -1,0 +1,19 @@
+#测试环境
+server:
+  port: 18026
+  servlet:
+    context-path: /
+spring:
+  application:
+    name: oauth2-auth-server
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+        enabled: true
+        register: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
+        health-check-critical-timeout: 60s
