@@ -28,6 +28,10 @@
     <modules>
         <module>oauth2-common</module>
         <module>oauth2-auth-server</module>
+        <module>oauth2-product-server</module>
+        <module>oauth2-gateway</module>
+        <module>spring-security-core</module>
+        <module>spring-security-web</module>
     </modules>
 
     <dependencyManagement>

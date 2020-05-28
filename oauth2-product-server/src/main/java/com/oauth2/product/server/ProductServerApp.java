@@ -1,4 +1,4 @@
-package com.oauth2.auth.server;
+package com.oauth2.product.server;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -7,14 +7,14 @@ import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author ：Mr.Li
- * @date ：Created in 2020/5/27 17:22
+ * @date ：Created in 2020/5/27 17:37
  */
 @ComponentScan()
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AuthServerApp {
-    public static void main(String[] args) {
+public class ProductServerApp {
 
-        SpringApplication.run(AuthServerApp.class);
+    public static void main(String[] args) {
+        SpringApplication.run(ProductServerApp.class);
     }
 }

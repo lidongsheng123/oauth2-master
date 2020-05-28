@@ -7,11 +7,10 @@
         <groupId>com.oauth2</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>oauth2-auth-server</artifactId>
+    <artifactId>oauth2-product-server</artifactId>
     <packaging>jar</packaging>
-    <description>认证授权-微服务</description>
+    <description>商品微服务</description>
     <dependencies>
         <dependency>
             <groupId>com.oauth2</groupId>
@@ -32,7 +31,6 @@
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
-
     <build>
         <plugins>
             <plugin>
@@ -41,5 +39,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>

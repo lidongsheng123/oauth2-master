@@ -1,0 +1,32 @@
+server:
+  port: 18020
+  servlet:
+    context-path: /
+
+debug: false
+
+spring:
+  application:
+    name: oauth2-gateway
+  cloud:
+    consul:
+      host: localhost
+      port: 8500
+      discovery:
+        prefer-ip-address: true
+        enabled: true  
+        register: true
+        health-check-path: /actuator/health
+        health-check-interval: 15s
+        health-check-critical-timeout: 60s
+    gateway:
+      routes:
+        #路由: 订单微服务
+        - id: oauth2-product-server
+          uri: lb://oauth2-product-server
+          predicates:
+            - Path=/api/**
+          filters:
+            - StripPrefix=1
+      x-forwarded:
+        host-enabled: true

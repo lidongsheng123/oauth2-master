@@ -1,20 +1,17 @@
-package com.oauth2.auth.server;
+package com.oauth2.gateway;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.cloud.client.discovery.EnableDiscoveryClient;
-import org.springframework.context.annotation.ComponentScan;
 
 /**
  * @author ：Mr.Li
- * @date ：Created in 2020/5/27 17:22
+ * @date ：Created in 2020/5/27 17:44
  */
-@ComponentScan()
 @EnableDiscoveryClient
 @SpringBootApplication
-public class AuthServerApp {
+public class GatewayApp {
     public static void main(String[] args) {
-
-        SpringApplication.run(AuthServerApp.class);
+        SpringApplication.run(GatewayApp.class);
     }
 }

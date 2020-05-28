@@ -1,11 +1,11 @@
 #测试环境
 server:
-  port: 18021
+  port: 18022
   servlet:
     context-path: /
 spring:
   application:
-    name: oauth2-auth-server
+    name: oauth2-product-server
   cloud:
     consul:
       host: localhost

@@ -7,31 +7,33 @@
         <groupId>com.oauth2</groupId>
         <version>0.0.1-SNAPSHOT</version>
     </parent>
-
     <modelVersion>4.0.0</modelVersion>
-    <artifactId>oauth2-auth-server</artifactId>
-    <packaging>jar</packaging>
-    <description>认证授权-微服务</description>
+
+    <artifactId>spring-security-core</artifactId>
+    <description>身份认证/授权核心服务</description>
+
     <dependencies>
         <dependency>
             <groupId>com.oauth2</groupId>
             <artifactId>oauth2-common</artifactId>
-            <version>${project.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-consul-discovery</artifactId>
+            <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-security</artifactId>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
         </dependency>
     </dependencies>
+
 
     <build>
         <plugins>
@@ -41,5 +43,4 @@
             </plugin>
         </plugins>
     </build>
-
 </project>
