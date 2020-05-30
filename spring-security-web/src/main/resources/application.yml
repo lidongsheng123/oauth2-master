@@ -6,3 +6,6 @@ server:
 spring:
   application:
     name: spring-security-web
+  thymeleaf:
+    cache: false
+    prefix:
